@@ -20,4 +20,11 @@ except ImportError:
     print("To enable Excel export, please install openpyxl using: pip install openpyxl")
     EXCEL_AVAILABLE = False
 
-# ... [rest of the code from 1.4EconomicSimulationWebUI.py] ... 
+# ... [rest of the code from 1.4EconomicSimulationWebUI.py] ...
+
+# Initialize Flask app
+app = Flask(__name__)
+app.secret_key = os.urandom(24).hex()
+system = EconomicSystem()
+
+# ... [rest of the routes and application code] ... 
