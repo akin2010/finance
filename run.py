@@ -1,5 +1,5 @@
 import os
-from economic_sim_web import app
+from EconomicSimulation import app
 
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 8000))
